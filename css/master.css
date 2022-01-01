@@ -1,0 +1,112 @@
+/* Start Variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* End Variables */
+/* Start Basics */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #19a1ad;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 70%, 70%;
+    background-position: -80% 200%, 160% -180%;
+    position: relative;
+}
+
+/* End Basics */
+
+.card {
+    width: 350px;
+    margin: 150px auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.card .background-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card .profile-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-55px);
+    -webkit-transform: translateY(-55px);
+    -moz-transform: translateY(-55px);
+    -ms-transform: translateY(-55px);
+    -o-transform: translateY(-55px);
+}
+
+.card .info {
+    margin-top: -55px;
+}
+
+.card .info p .name {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.card .info p .age {
+    color: var(--dark-grayish-blue);
+}
+
+.card .location {
+    margin-top: -10px;
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
+
+.card .stats {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin-top: 25px;
+    border-top: 1px solid rgb(184, 184, 184);
+}
+
+.card .stats>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .stats>div .number {
+    font-weight: 700;
+}
+
+.card .stats>div .text {
+    font-size: 13px;
+}
+
+
+
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
